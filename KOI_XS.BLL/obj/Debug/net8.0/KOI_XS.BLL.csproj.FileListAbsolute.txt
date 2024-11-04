@@ -1,15 +1,33 @@
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\bin\Debug\net8.0\KOI_XS.BLL.deps.json
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\bin\Debug\net8.0\KOI_XS.BLL.dll
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\bin\Debug\net8.0\KOI_XS.BLL.pdb
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\bin\Debug\net8.0\KOI_XS.DAL.dll
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\bin\Debug\net8.0\KOI_XS.DAL.pdb
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\KOI_XS.BLL.csproj.AssemblyReference.cache
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\KOI_XS.BLL.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\KOI_XS.BLL.AssemblyInfoInputs.cache
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\KOI_XS.BLL.AssemblyInfo.cs
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\KOI_XS.BLL.csproj.CoreCompileInputs.cache
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\KOI_XS.BLL.csproj.Up2Date
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\KOI_XS.BLL.dll
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\refint\KOI_XS.BLL.dll
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\KOI_XS.BLL.pdb
-C:\Users\hahuy\KOI_XS\KOI_XS.BLL\obj\Debug\net8.0\ref\KOI_XS.BLL.dll
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.BLL.deps.json
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.BLL.dll
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.BLL.pdb
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.DAL.dll
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.DAL.pdb
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.csproj.AssemblyReference.cache
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.AssemblyInfoInputs.cache
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.AssemblyInfo.cs
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.csproj.CoreCompileInputs.cache
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.csproj.Up2Date
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.dll
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/refint/KOI_XS.BLL.dll
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.pdb
+C:/Users/hahuy/KOI_XS/KOI_XS.BLL/obj/Debug/net8.0/ref/KOI_XS.BLL.dll
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.BLL.deps.json
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.BLL.runtimeconfig.json
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.BLL.dll
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.BLL.pdb
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.DAL.dll
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/bin/Debug/net8.0/KOI_XS.DAL.pdb
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.csproj.AssemblyReference.cache
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.AssemblyInfoInputs.cache
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.AssemblyInfo.cs
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.csproj.CoreCompileInputs.cache
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.sourcelink.json
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.csproj.Up2Date
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.dll
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/refint/KOI_XS.BLL.dll
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.pdb
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/KOI_XS.BLL.genruntimeconfig.cache
+/Users/VanThuan/Software technology/CaKoi/KOI_XS.BLL/obj/Debug/net8.0/ref/KOI_XS.BLL.dll

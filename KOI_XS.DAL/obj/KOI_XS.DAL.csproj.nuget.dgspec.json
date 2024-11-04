@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hahuy\\KOI_XS\\KOI_XS.DAL\\KOI_XS.DAL.csproj": {}
+    "/Users/VanThuan/Software technology/CaKoi/KOI_XS.DAL/KOI_XS.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hahuy\\KOI_XS\\KOI_XS.DAL\\KOI_XS.DAL.csproj": {
+    "/Users/VanThuan/Software technology/CaKoi/KOI_XS.DAL/KOI_XS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hahuy\\KOI_XS\\KOI_XS.DAL\\KOI_XS.DAL.csproj",
+        "projectUniqueName": "/Users/VanThuan/Software technology/CaKoi/KOI_XS.DAL/KOI_XS.DAL.csproj",
         "projectName": "KOI_XS.DAL",
-        "projectPath": "C:\\Users\\hahuy\\KOI_XS\\KOI_XS.DAL\\KOI_XS.DAL.csproj",
-        "packagesPath": "C:\\Users\\hahuy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hahuy\\KOI_XS\\KOI_XS.DAL\\obj\\",
+        "projectPath": "/Users/VanThuan/Software technology/CaKoi/KOI_XS.DAL/KOI_XS.DAL.csproj",
+        "packagesPath": "/Users/VanThuan/.nuget/packages/",
+        "outputPath": "/Users/VanThuan/Software technology/CaKoi/KOI_XS.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hahuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/VanThuan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

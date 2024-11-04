@@ -25,7 +25,9 @@ namespace KOI_XS.BLL
         // Lấy cá KoiFish theo ID
         public async Task<KoiFish> GetKoiByIdAsync(int id)
         {
+#pragma warning disable CS8603 // Possible null reference return.
             return await _context.KoiFishes.FindAsync(id);
+#pragma warning restore CS8603 // Possible null reference return.
         }
 
         // Thêm mới cá KoiFish
