@@ -1,0 +1,32 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Giỏ Hàng</h1>
+    <table id="cart">
+        <thead>
+            <tr>
+                <th>Ảnh</th>
+                <th>Tên Cá Koi</th>
+                <th>Số Lượng</th>
+                <th>Giá</th>
+                <th>Tổng</th>
+                <th>Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Danh sách sản phẩm sẽ được thêm vào đây thông qua JavaScript -->
+        </tbody>
+    </table>
+    <h2 id="total-price">Tổng Giá: 0</h2>
+    <button onclick="proceedToCheckout()">Thanh Toán</button>
+
+    <script src="cart.js"></script>
+</body>
+</html>

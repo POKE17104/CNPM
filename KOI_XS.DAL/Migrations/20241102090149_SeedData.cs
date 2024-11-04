@@ -38,33 +38,33 @@ namespace KOI_XS.DAL.Migrations
 
             migrationBuilder.CreateTable(
                 name: "Customers",
-                columns: table => new
+                columns: static table => new
                 {
                     CustomerId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
-                constraints: table =>
+                constraints: static table =>
                 {
-                    table.PrimaryKey("PK_Customers", x => x.CustomerId);
+                    table.PrimaryKey("PK_Customers", static x => x.CustomerId);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Orders",
-                columns: table => new
+                columns: static table => new
                 {
                     OrderId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CustomerId = table.Column<int>(type: "int", nullable: false)
                 },
-                constraints: table =>
+                constraints: static table =>
                 {
-                    table.PrimaryKey("PK_Orders", x => x.OrderId);
+                    table.PrimaryKey("PK_Orders", static x => x.OrderId);
                     table.ForeignKey(
                         name: "FK_Orders_Customers_CustomerId",
-                        column: x => x.CustomerId,
+                        column: static x => x.CustomerId,
                         principalTable: "Customers",
                         principalColumn: "CustomerId",
                         onDelete: ReferentialAction.Cascade);
@@ -72,23 +72,23 @@ namespace KOI_XS.DAL.Migrations
 
             migrationBuilder.CreateTable(
                 name: "OrderKois",
-                columns: table => new
+                columns: static table => new
                 {
                     OrderId = table.Column<int>(type: "int", nullable: false),
                     KoiFishId = table.Column<int>(type: "int", nullable: false)
                 },
-                constraints: table =>
+                constraints: static table =>
                 {
-                    table.PrimaryKey("PK_OrderKois", x => new { x.OrderId, x.KoiFishId });
+                    table.PrimaryKey("PK_OrderKois", static x => new { x.OrderId, x.KoiFishId });
                     table.ForeignKey(
                         name: "FK_OrderKois_KoiFishes_KoiFishId",
-                        column: x => x.KoiFishId,
+                        column: static x => x.KoiFishId,
                         principalTable: "KoiFishes",
                         principalColumn: "KoiFishId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_OrderKois_Orders_OrderId",
-                        column: x => x.OrderId,
+                        column: static x => x.OrderId,
                         principalTable: "Orders",
                         principalColumn: "OrderId",
                         onDelete: ReferentialAction.Cascade);

@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{D8251707-A2F0-477B-BB37-6434434900DF}|Default">
+  <MonoDevelop.Ide.ItemProperties.KOI__XS.Presentation PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="KOI_XS.DAL/KoiContext.cs">
+    <Files>
+      <File FileName="KOI_XS.DAL/KoiContext.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KOI_XS">
+            <Node name="KOI_XS.BLL" expanded="True" />
+            <Node name="KOI_XS.DAL" expanded="True" />
+            <Node name="KOI_XS.Presentation" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

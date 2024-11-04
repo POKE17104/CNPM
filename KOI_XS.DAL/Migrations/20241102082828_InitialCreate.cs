@@ -12,7 +12,7 @@ namespace KOI_XS.DAL.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "KoiFishes",
-                columns: table => new
+                columns: static table => new
                 {
                     KoiId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
@@ -20,9 +20,9 @@ namespace KOI_XS.DAL.Migrations
                     Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
-                constraints: table =>
+                constraints: static table =>
                 {
-                    table.PrimaryKey("PK_KoiFishes", x => x.KoiId);
+                    table.PrimaryKey("PK_KoiFishes", static x => x.KoiId);
                 });
         }
 

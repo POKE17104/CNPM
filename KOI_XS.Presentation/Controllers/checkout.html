@@ -1,0 +1,34 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Thanh Toán</h1>
+    <form id="checkout-form">
+        <label for="name">Tên:</label>
+        <input type="text" id="name" required>
+
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="payment-method">Phương thức thanh toán:</label>
+        <select id="payment-method">
+            <option value="credit-card">Thẻ tín dụng</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank-transfer">Chuyển khoản ngân hàng</option>
+        </select>
+
+        <button type="submit">Xác Nhận Đơn Hàng</button>
+    </form>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

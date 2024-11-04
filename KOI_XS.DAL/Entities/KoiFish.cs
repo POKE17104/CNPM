@@ -1,26 +1,13 @@
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using KOI_XS.DAL.Entities;
 
-namespace KOI_XS.DAL.Entities
+public class KoiFish
 {
-    public class KoiFish
-    {
-        [Key]
-        public int KoiFishId { get; set; }
+    public int KoiFishId { get; set; }
+    public string Name { get; set; }
+    public string Color { get; set; }
+    public decimal Price { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string Name { get; set; }
-
-        [Required]
-        [StringLength(50)]
-        public string Color { get; set; }
-
-        [Required]
-        [DataType(DataType.Currency)]
-        public decimal Price { get; set; }
-
-        // Navigation Property
-        public ICollection<OrderKoi> OrderKois { get; set; }
-    }
+    // Đảm bảo kiểu của OrderKois là ICollection<OrderKoi> thay vì object
+    public ICollection<OrderKoi> OrderKois { get; set; } = new List<OrderKoi>();
+    
 }
