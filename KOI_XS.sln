@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOI_XS.BLL", "KOI_XS.BLL\KOI_XS.BLL.csproj", "{667B3E62-4D27-4701-9366-26C29975459B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOI_XS.DAL", "KOI_XS.DAL\KOI_XS.DAL.csproj", "{75AEE7B5-2C2A-40B8-9248-0FC87CCEF0D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOI_XS.Presentation", "KOI_XS.Presentation\KOI_XS.Presentation.csproj", "{D62A81A3-08C2-47A2-9C5C-B57691C76C1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{667B3E62-4D27-4701-9366-26C29975459B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667B3E62-4D27-4701-9366-26C29975459B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667B3E62-4D27-4701-9366-26C29975459B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667B3E62-4D27-4701-9366-26C29975459B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AEE7B5-2C2A-40B8-9248-0FC87CCEF0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AEE7B5-2C2A-40B8-9248-0FC87CCEF0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AEE7B5-2C2A-40B8-9248-0FC87CCEF0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AEE7B5-2C2A-40B8-9248-0FC87CCEF0D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62A81A3-08C2-47A2-9C5C-B57691C76C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62A81A3-08C2-47A2-9C5C-B57691C76C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62A81A3-08C2-47A2-9C5C-B57691C76C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62A81A3-08C2-47A2-9C5C-B57691C76C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

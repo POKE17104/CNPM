@@ -1,0 +1,16 @@
+@model KOI_XS.DAL.Entities.Koi
+
+@{
+    ViewData["Title"] = "Chi tiết cá Koi";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h2>@Model.Name</h2>
+    <p><strong>Giống:</strong> @Model.Breed</p>
+    <p><strong>Giá:</strong> @Model.Price.ToString("C")</p>
+    <img src="@Model.ImageUrl" alt="@Model.Name" width="300" />
+</div>
+
+<a href="@Url.Action("Index", "Koi")" class="btn btn-secondary">Quay lại danh sách</a>

@@ -1,0 +1,37 @@
+@model IEnumerable<KOI_XS.DAL.Entities.Koi>
+
+@{
+    ViewData["Title"] = "Danh sách cá Koi";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Giống</th>
+            <th>Giá</th>
+            <th>Hình ảnh</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var koi in Model)
+        {
+            <tr>
+                <td>@koi.Name</td>
+                <td>@koi.Breed</td>
+                <td>@koi.Price.ToString("C")</td>
+                <td><img src="@koi.ImageUrl" alt="@koi.Name" width="100" /></td>
+                <td>
+                    <a href="@Url.Action("Details", "Koi", new { id = koi.KoiId })">Chi tiết</a> |
+                    <a href="@Url.Action("Edit", "Koi", new { id = koi.KoiId })">Sửa</a> |
+                    <a href="@Url.Action("Delete", "Koi", new { id = koi.KoiId })">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Koi")" class="btn btn-primary">Thêm mới cá Koi</a>

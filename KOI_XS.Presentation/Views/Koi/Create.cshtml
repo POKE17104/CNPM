@@ -1,0 +1,28 @@
+@model KOI_XS.DAL.Entities.Koi
+
+@{
+    ViewData["Title"] = "Thêm mới cá Koi";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>Tên</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Giống</label>
+        <input asp-for="Breed" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Giá</label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Hình ảnh</label>
+        <input asp-for="ImageUrl" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a href="@Url.Action("Index", "Koi")" class="btn btn-secondary">Hủy</a>
+</form>
