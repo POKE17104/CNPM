@@ -10,7 +10,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="@Url.Action("Index", "Home")">KOI_XS</a>
-        <!-- Thêm các liên kết điều hướng -->
+        <li><a href="@Url.Action("Index", "Koi")">Koi Index</a></li>
+        <li><a href="@Url.Action("Create", "Koi")">Add Koi</a></li>
     </nav>
     <div class="container">
         @RenderBody()
