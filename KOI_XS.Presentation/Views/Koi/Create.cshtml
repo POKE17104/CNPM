@@ -4,25 +4,66 @@
     ViewData["Title"] = "Thêm mới cá Koi";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1 class="text-center my-4">@ViewData["Title"]</h1>
 
-<form asp-action="Create" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label>Tên</label>
-        <input asp-for="Name" class="form-control" />
+<form asp-action="Create" method="post" enctype="multipart/form-data" class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 form-container">
+
+        
+            <div class="mb-3">
+                <label asp-for="KoiId" class="form-label"></label>
+                <input asp-for="KoiId" class="form-control" />
+                <span asp-validation-for="KoiId" class="text-danger"></span>
+            </div>
+    
+
+
+
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="Breed" class="form-label"></label>
+                <input asp-for="Breed" class="form-control" />
+                <span asp-validation-for="Breed" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Price" class="form-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+           <div class="mb-3">
+                <label asp-for="Color" class="form-label"></label>
+                <input asp-for="Color" class="form-control" placeholder="Nhập màu sắc" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ImageUrl" class="form-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-success">
+                    <i class="fas fa-save"></i> Lưu
+                </button>
+                <a href="@Url.Action("Index", "Koi")" class="btn btn-secondary">
+                    <i class="fas fa-times"></i> Hủy
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label>Giống</label>
-        <input asp-for="Breed" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Giá</label>
-        <input asp-for="Price" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label>Hình ảnh</label>
-        <input asp-for="ImageUrl" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary">Lưu</button>
-    <a href="@Url.Action("Index", "Koi")" class="btn btn-secondary">Hủy</a>
 </form>
+
+@section Scripts {
+   
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}

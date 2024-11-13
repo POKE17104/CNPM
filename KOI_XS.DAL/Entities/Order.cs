@@ -12,10 +12,10 @@ namespace KOI_XS.DAL.Entities
         [Required]
         public DateTime OrderDate { get; set; }
 
-        // Foreign Key
+      
         public int CustomerId { get; set; }
 
-        // Navigation Properties
+        
         public Customer Customer { get; set; }
         public ICollection<OrderKoi> OrderKois { get; set; }
     }

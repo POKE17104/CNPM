@@ -13,6 +13,42 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\bl1.jpg",
+      "PackagePath": "staticwebassets\\images\\bl1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\bl2.jpg",
+      "PackagePath": "staticwebassets\\images\\bl2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\bl3.jpg",
+      "PackagePath": "staticwebassets\\images\\bl3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\hl1.jpg",
+      "PackagePath": "staticwebassets\\images\\hl1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\hl2.jpg",
+      "PackagePath": "staticwebassets\\images\\hl2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\hl3.jpg",
+      "PackagePath": "staticwebassets\\images\\hl3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\nen.jpg",
+      "PackagePath": "staticwebassets\\images\\nen.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\service1.jpg",
+      "PackagePath": "staticwebassets\\images\\service1.jpg"
+    },
+    {
       "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -8,17 +8,81 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="@Url.Action("Index", "Home")">KOI_XS</a>
-        <li><a href="@Url.Action("Index", "Koi")">Koi Index</a></li>
-        <li><a href="@Url.Action("Create", "Koi")">Add Koi</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">KOI XPRESS NHÓM H</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Koi")">Các Loại Cá Koi</a>
+                    </li>
+                    
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "Cart")">Giỏ Hàng</a>
+                        </li>
+                    }
+
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Create", "Koi")">Thêm Mới Cá Koi</a>
+                        </li>
+                    }
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li><span class="dropdown-item">Chào, @User.Identity.Name</span></li>
+                                <li>
+                                    <form asp-controller="Account" asp-action="Logout" method="post">
+                                        <button type="submit" class="dropdown-item">Đăng xuất</button>
+                                    </form>
+                                </li>
+                            }
+                            else
+                            {
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="Login">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="Register">Đăng ký</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="container">
+
+
+   
+    <div class="content-wrapper">
         @RenderBody()
     </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>© 2024 KOI XPRESS NHÓM H. All rights reserved.</p>
+            <h2 class="mt-4">Liên Hệ Với Chúng Tôi</h2>
+            <p>Email: support@koi-transport.com</p>
+            <p>Hotline: 1900 900 345</p>
+            <p>Địa chỉ: 123 Đường Lê Đức Thọ, Quận Gò Vấp, TP.HCM</p>
+        </div>
+    </footer>
+
+   
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

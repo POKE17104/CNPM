@@ -16,19 +16,19 @@ namespace KOI_XS.BLL
             _context = context;
         }
 
-        // Lấy tất cả cá KoiFish
+        
         public async Task<IEnumerable<KoiFish>> GetAllKoiAsync()
         {
             return await _context.KoiFishes.ToListAsync();
         }
 
-        // Lấy cá KoiFish theo ID
+        // Lấy cá theo ID
         public async Task<KoiFish> GetKoiByIdAsync(int id)
         {
             return await _context.KoiFishes.FindAsync(id);
         }
 
-        // Thêm mới cá KoiFish
+        // Thêm mới cá
     public async Task<KoiFish> AddKoiAsync(Koi koi)
 {
    
@@ -51,22 +51,30 @@ namespace KOI_XS.BLL
 
 
 
-        // Cập nhật thông tin cá KoiFish
+        // Cập nhật thông tin cá 
         public async Task<bool> UpdateKoiAsync(KoiFish koiFish)
         {
             _context.KoiFishes.Update(koiFish);
             return (await _context.SaveChangesAsync()) > 0;
         }
 
-        // Xóa cá KoiFish
+        // Xóa cá 
         public async Task<bool> DeleteKoiAsync(int id)
         {
-            var koiFish = await _context.KoiFishes.FindAsync(id);
-            if (koiFish == null)
+            var koi = await _context.KoiFishes.FindAsync(id);
+            if (koi == null)
+            {
                 return false;
+            }
 
-            _context.KoiFishes.Remove(koiFish);
-            return (await _context.SaveChangesAsync()) > 0;
+            _context.KoiFishes.Remove(koi);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> UpdateKoiAsync(Koi koi)
+        {
+            throw new NotImplementedException();
         }
     }
 }

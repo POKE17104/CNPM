@@ -1,9 +1,73 @@
 ﻿@{
-    ViewData["Title"] = "Koi Transport Home";
+    ViewData["Title"] = "Trang Chủ";
 }
 
-<div class="text-center">
-    <h1>Welcome to Koi XPRESS NHÓM H</h1>
-    <p>We ensure the safest and most caring transport solutions for your Koi fish.</p>
-    <a href="@Url.Action("Services", "Home")" class="btn btn-primary">View Services</a>
+<!-- Banner Chào Mừng -->
+<div class="custom-jumbotron" style="background-image: url('@Url.Content("~/images/nen.jpg")'); background-size: cover; background-position: center;">
+    <div class="container position-relative text-white">
+        <h1 class="display-4">Chào mừng đến với KOI XPRESS NHÓM H</h1>
+        <p class="lead">Dịch vụ vận chuyển cá Koi chuyên nghiệp, an toàn và nhanh chóng trên toàn quốc</p>
+    </div>
 </div>
+
+<!-- Carousel Hình Ảnh Nổi Bật -->
+<div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src='@Url.Content("~/images/hl1.jpg")' class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src='@Url.Content("~/images/hl2.jpg")' class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src='@Url.Content("~/images/hl3.jpg")' class="d-block w-100" alt="Slide 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Phần Blog -->
+<section class="blog-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Chúng tôi luôn đi đầu</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src='@Url.Content("~/images/bl1.jpg")' class="card-img-top" alt="Đóng Gói Cá Koi">
+                    <div class="card-body">
+                        <h5 class="card-title">Quy Trình Đóng Gói Cá Koi</h5>
+                        <p>Chúng tôi sử dụng các vật liệu chuyên dụng để đảm bảo an toàn cho cá trong suốt quá trình vận chuyển.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src='@Url.Content("~/images/bl2.jpg")' class="card-img-top" alt="Vận Chuyển An Toàn">
+                    <div class="card-body">
+                        <h5 class="card-title">Vận Chuyển An Toàn</h5>
+                        <p>Quy trình vận chuyển cá Koi chuyên nghiệp với đội ngũ giàu kinh nghiệm.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src='@Url.Content("~/images/bl3.jpg")' class="card-img-top" alt="Dịch Vụ Khách Hàng">
+                    <div class="card-body">
+                        <h5 class="card-title">Dịch Vụ Hỗ Trợ Khách Hàng</h5>
+                        <p>Chúng tôi luôn sẵn sàng hỗ trợ khách hàng trước và sau khi vận chuyển.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+@model List<KOI_XS.Presentation.Controllers.CartItem>
+
+@{
+    ViewData["Title"] = "Giỏ hàng";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <tr>
+        <th>Tên cá Koi</th>
+        <th>Số lượng</th>
+        <th>Giá</th>
+        <th>Tổng</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Koi.Name</td>
+            <td>@item.Quantity</td>
+            <td>@item.Koi.Price.ToString("C")</td>
+            <td>@(item.Quantity * item.Koi.Price).ToString("C")</td>
+            <td>
+                <a asp-action="Remove" asp-route-id="@item.Koi.KoiId" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,36 @@
+@model KOI_XS.DAL.Entities.Koi
+
+@{
+    ViewData["Title"] = "Chỉnh sửa cá Koi";
+}
+
+<h1 class="text-center my-4">@ViewData["Title"]</h1>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data" class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <input type="hidden" asp-for="KoiId" />
+
+         
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+           
+
+            <div class="d-flex justify-content-between mt-4">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Lưu thay đổi
+                </button>
+                <a href="@Url.Action("Index", "Koi")" class="btn btn-secondary">
+                    <i class="fas fa-times"></i> Hủy
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
