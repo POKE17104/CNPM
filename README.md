@@ -1,14 +1,14 @@
 KOI_XS Project
+<>
 🛠️ Giới thiệu
 KOI_XS là một dự án phần mềm nhằm quản lý và vận chuyển cá koi chuyên nghiệp trên toàn quốc. Dự án này sử dụng mô hình 3-tier architecture, bao gồm các lớp Business Logic Layer (BLL), Data Access Layer (DAL), và Presentation Layer, giúp tối ưu hóa quản lý mã nguồn và bảo trì hệ thống.
 
 📂 Cấu trúc dự án
 Dưới đây là cấu trúc thư mục của dự án:
 
-bash
 KOI_XS/
-├── KOI_XS.BLL/            # Business Logic Layer - Xử lý logic nghiệp vụ
-├── KOI_XS.DAL/            # Data Access Layer - Truy cập cơ sở dữ liệu
+├── KOI_XS.BLL/            # Business Logic Layer - Xử lý logic nghiệp vụ<>
+├── KOI_XS.DAL/            # Data Access Layer - Truy cập cơ sở dữ liệu<>
 └── KOI_XS.Presentation/   # Presentation Layer - Giao diện người dùng
 
 🚀 Yêu cầu hệ thống
