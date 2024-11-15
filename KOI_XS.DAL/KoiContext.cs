@@ -13,6 +13,7 @@ namespace KOI_XS.DAL
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderKoi> OrderKois { get; set; }
         public DbSet<Koi> Kois { get; set; }
+        
 
        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
