@@ -1,0 +1,74 @@
+
+.description {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.description h2 {
+  color: #1b6ec2;
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-size: 1rem;
+  color: #555;
+}
+.featured-images img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featured-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Hiệu ứng của tiêu đề */
+
+.animate-title {
+  color: #000000; 
+  text-shadow: none; 
+  font-weight: bold;
+  animation: none; 
+}
+
+
+.animate-text {
+  color: #000000; 
+  text-shadow: none; 
+  animation: fadeInEffect 2s ease-out 1s both;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/**/
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  filter: brightness(1.1);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}

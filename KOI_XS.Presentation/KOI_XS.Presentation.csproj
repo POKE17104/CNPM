@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\KOI_XS.BLL\KOI_XS.BLL.csproj" />
   </ItemGroup>
+ 
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.10" />

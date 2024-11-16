@@ -5,12 +5,48 @@
       "PackagePath": "staticwebassets\\KOI_XS.Presentation.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\base.css",
+      "PackagePath": "staticwebassets\\css\\base.css"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\buttons.css",
+      "PackagePath": "staticwebassets\\css\\buttons.css"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\cards.css",
+      "PackagePath": "staticwebassets\\css\\cards.css"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\carousel.css",
+      "PackagePath": "staticwebassets\\css\\carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\chat.css",
+      "PackagePath": "staticwebassets\\css\\chat.css"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\forms.css",
+      "PackagePath": "staticwebassets\\css\\forms.css"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
     },
     {
       "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\banner.jpg"
     },
     {
       "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\bl1.jpg",
@@ -39,6 +75,18 @@
     {
       "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\logo.jpg",
       "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\nb1.jpg",
+      "PackagePath": "staticwebassets\\images\\nb1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\nb2.jpg",
+      "PackagePath": "staticwebassets\\images\\nb2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\nb3.jpg",
+      "PackagePath": "staticwebassets\\images\\nb3.jpg"
     },
     {
       "Id": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\wwwroot\\images\\nen.jpg",

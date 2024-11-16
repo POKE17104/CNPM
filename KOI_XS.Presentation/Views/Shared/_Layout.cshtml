@@ -1,16 +1,31 @@
 ﻿<!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - KOI_XS</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    @* Lấy tên controller và action hiện tại *@
+    @{
+        var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+        var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    }
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="@Url.Action("Index", "Home")">KOI XPRESS NHÓM H</a>
+           
+            <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Index", "Home")">
+                <img src="~/images/logo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,21 +37,35 @@
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index", "Koi")">Các Loại Cá Koi</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Cart")">Giỏ Hàng</a>
+                    </li>
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Cart")">Giỏ Hàng</a>
+                            <a class="nav-link" href="@Url.Action("Orders", "Order")">Quản Lý Đơn Hàng</a>
                         </li>
                     }
 
-                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Create", "Koi")">Thêm Mới Cá Koi</a>
-                        </li>
-                    }
-
+                   @if (User.Identity.IsAuthenticated)
+                  {
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Profile", "Account")">
+                            <i class="fas fa-user-circle"></i> Thông Tin Cá Nhân
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-link nav-link">Đăng Xuất</button>
+                        </form>
+                    </li>
+                  }
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Profile", "Account")">
+                            <i class="fas fa-user-circle fa-lg"></i>
+                        </a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
                             <i class="fas fa-user-circle"></i>
@@ -63,13 +92,50 @@
         </div>
     </nav>
 
-
-   
+    
     <div class="content-wrapper">
         @RenderBody()
-    </div>
 
-    
+        @if (currentController == "Home" && currentAction == "Index")
+        {
+           
+            
+            <div class="description bg-light text-center py-5">
+                <div class="container">
+                    <h2>Về Chúng tôi và những Chú cá</h2>
+                    <p>Chúng tôi chuyên cung cấp các loại cá Koi chất lượng cao và dịch vụ hỗ trợ tận tâm.</p>
+                </div>
+            </div>
+
+           
+            <div class="featured-images container my-5 text-center">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="~/images/nb1.jpg" class="img-fluid rounded shadow" alt="Koi 1" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="~/images/nb2.jpg" class="img-fluid rounded shadow" alt="Koi 2" style="height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="~/images/nb3.jpg" class="img-fluid rounded shadow" alt="Koi 3" style="height: 200px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="description-section bg-light text-center py-5">
+                <div class="container">
+                    <h2>Giới Thiệu Về Cá Koi</h2>
+                    <p>Cá Koi là loài cá mang ý nghĩa may mắn và thịnh vượng. Chúng tôi cung cấp các loại cá Koi chất lượng cao được chọn lọc kỹ lưỡng.</p>
+                    <h3>Cách Chăm Sóc Cá Koi</h3>
+                    <p>Đảm bảo cung cấp nước sạch và thức ăn chất lượng để cá Koi phát triển khỏe mạnh.</p>
+                    <h3>Quy Trình Đóng Gói & Vận Chuyển</h3>
+                    <p>Cá Koi được đóng gói cẩn thận để đảm bảo an toàn trong quá trình vận chuyển đến tay khách hàng.</p>
+                </div>
+            </div>
+        }
+    </div>
+  
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p>© 2024 KOI XPRESS NHÓM H. All rights reserved.</p>
@@ -81,8 +147,34 @@
     </footer>
 
    
+    <div class="chat-support fixed-bottom text-end mb-4 me-4">
+        <button class="btn btn-primary rounded-circle" onclick="toggleChatWindow()">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    
+    <div id="chatWindow" class="chat-window" style="display: none;">
+        <div class="chat-header">Hỗ Trợ Trực Tuyến</div>
+        <div class="chat-body">
+            <p>Chi phí vận chuyển</p>
+            <p>Thời gian vận chuyển</p>
+            <p>Yêu cầu hỗ trợ khác</p>
+        </div>
+        <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Nhập tin nhắn..." class="form-control">
+        <button class="btn btn-primary" onclick="sendMessage()">Gửi</button>
+    </div>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js"></script>
-    @RenderSection("Scripts", required: false)
+    <script>
+        function toggleChatWindow() {
+            const chatWindow = document.getElementById('chatWindow');
+            chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+     @RenderSection("Scripts", required: false)
 </body>
+
 </html>
+<script src="~/js/site.js"></script>

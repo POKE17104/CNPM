@@ -1,0 +1,11 @@
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #1b6ec2;
+  margin-left: 5px;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

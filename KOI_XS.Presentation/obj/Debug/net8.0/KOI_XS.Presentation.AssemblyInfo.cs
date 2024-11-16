@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KOI_XS.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7c41f27dcfaab63c0b347309c65c15ee90a0855")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70cc21cd6d5fbca2e0e7b0a900117cc57eff0f1d")]
 [assembly: System.Reflection.AssemblyProductAttribute("KOI_XS.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KOI_XS.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

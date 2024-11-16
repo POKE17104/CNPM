@@ -18,8 +18,8 @@ namespace KOI_XS.DAL.Entities
     [DataType(DataType.Currency)]
     public decimal Price { get; set; }
 
-    public string Breed { get; set; }
-    public string ImageUrl { get; set; }
+    public string? Breed { get; set; }
+    public string? ImageUrl { get; set; }
 
     public ICollection<OrderKoi> OrderKois { get; set; }
 }

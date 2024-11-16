@@ -1,8 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using Microsoft.EntityFrameworkCore;
 namespace KOI_XS.DAL.Entities
-{
+{ 
+    [PrimaryKey(nameof(OrderId), nameof(KoiFishId))]
     public class OrderKoi
     {
         [Key, Column(Order = 0)]

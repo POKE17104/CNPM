@@ -30,14 +30,35 @@ namespace KOI_XS.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
 
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("CustomerId");
 
@@ -47,15 +68,53 @@ namespace KOI_XS.DAL.Migrations
                         new
                         {
                             CustomerId = 1,
+                            Address = "123/34 Lê Văn Thọ, p15, Gò vấp,TP-HCM",
                             Email = "nguyenvana@example.com",
-                            Name = "Nguyen Van A"
+                            Name = "Nguyen Van A",
+                            Password = "password123",
+                            PhoneNumber = "0123456789",
+                            Username = "nguyenvana"
                         },
                         new
                         {
                             CustomerId = 2,
+                            Address = "456 Nguyễn Thị Minh Khai,p1,Quận 1, Tp-HCM",
                             Email = "tranthib@example.com",
-                            Name = "Tran Thi B"
+                            Name = "Tran Thi B",
+                            Password = "password456",
+                            PhoneNumber = "0987654321",
+                            Username = "tranthib"
                         });
+                });
+
+            modelBuilder.Entity("KOI_XS.DAL.Entities.Koi", b =>
+                {
+                    b.Property<int>("KoiId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("KoiId"));
+
+                    b.Property<string>("Breed")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Color")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("KoiId");
+
+                    b.ToTable("Kois");
                 });
 
             modelBuilder.Entity("KOI_XS.DAL.Entities.KoiFish", b =>
@@ -66,15 +125,19 @@ namespace KOI_XS.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("KoiFishId"));
 
+                    b.Property<string>("Breed")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Color")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -87,21 +150,27 @@ namespace KOI_XS.DAL.Migrations
                         new
                         {
                             KoiFishId = 1,
+                            Breed = "Dragon",
                             Color = "Red",
+                            ImageUrl = "http://example.com/koi-red-dragon.jpg",
                             Name = "Koi Red Dragon",
                             Price = 150.00m
                         },
                         new
                         {
                             KoiFishId = 2,
+                            Breed = "Beauty",
                             Color = "Black",
+                            ImageUrl = "http://example.com/koi-black-beauty.jpg",
                             Name = "Koi Black Beauty",
                             Price = 200.00m
                         },
                         new
                         {
                             KoiFishId = 3,
+                            Breed = "Pearl",
                             Color = "White",
+                            ImageUrl = "http://example.com/koi-white-pearl.jpg",
                             Name = "Koi White Pearl",
                             Price = 180.00m
                         });
@@ -132,23 +201,31 @@ namespace KOI_XS.DAL.Migrations
                         {
                             OrderId = 1,
                             CustomerId = 1,
-                            OrderDate = new DateTime(2024, 10, 23, 16, 1, 47, 341, DateTimeKind.Local).AddTicks(4832)
+                            OrderDate = new DateTime(2024, 11, 6, 9, 30, 4, 319, DateTimeKind.Local).AddTicks(1072)
                         },
                         new
                         {
                             OrderId = 2,
                             CustomerId = 2,
-                            OrderDate = new DateTime(2024, 10, 28, 16, 1, 47, 341, DateTimeKind.Local).AddTicks(4879)
+                            OrderDate = new DateTime(2024, 11, 11, 9, 30, 4, 319, DateTimeKind.Local).AddTicks(1110)
                         });
                 });
 
             modelBuilder.Entity("KOI_XS.DAL.Entities.OrderKoi", b =>
                 {
                     b.Property<int>("OrderId")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnOrder(0);
 
                     b.Property<int>("KoiFishId")
+                        .HasColumnType("int")
+                        .HasColumnOrder(1);
+
+                    b.Property<int>("Quantity")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("OrderId", "KoiFishId");
 
@@ -160,17 +237,23 @@ namespace KOI_XS.DAL.Migrations
                         new
                         {
                             OrderId = 1,
-                            KoiFishId = 1
+                            KoiFishId = 1,
+                            Quantity = 1,
+                            UnitPrice = 150.00m
                         },
                         new
                         {
                             OrderId = 1,
-                            KoiFishId = 2
+                            KoiFishId = 2,
+                            Quantity = 1,
+                            UnitPrice = 200.00m
                         },
                         new
                         {
                             OrderId = 2,
-                            KoiFishId = 3
+                            KoiFishId = 3,
+                            Quantity = 1,
+                            UnitPrice = 180.00m
                         });
                 });
 

@@ -1,0 +1,47 @@
+@model KOI_XS.Presentation.Models.ProfileViewModel
+
+@{
+    ViewData["Title"] = "Thông Tin Cá Nhân";
+}
+
+<h2>Thông Tin Cá Nhân</h2>
+<form asp-action="Profile" method="post">
+    <input type="hidden" asp-for="CustomerId" />
+
+    <div class="mb-3">
+        <label for="Name" class="form-label">Họ và Tên</label>
+        <input type="text" asp-for="Name" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" asp-for="Email" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="Address" class="form-label">Địa Chỉ</label>
+        <input type="text" asp-for="Address" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label for="PhoneNumber" class="form-label">Số Điện Thoại</label>
+        <input type="tel" asp-for="PhoneNumber" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Password" class="form-label">Mật Khẩu (Để trống nếu không thay đổi)</label>
+        <input type="password" asp-for="Password" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label for="ConfirmPassword" class="form-label">Nhập Lại Mật Khẩu</label>
+        <input type="password" asp-for="ConfirmPassword" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập Nhật</button>
+
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-success mt-3">@ViewBag.Message</div>
+    }
+</form>

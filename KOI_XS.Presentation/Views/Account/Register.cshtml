@@ -1,34 +1,45 @@
-@model KOI_XS.Presentation.Models.RegisterViewModel
-
 @{
-    ViewData["Title"] = "Đăng ký";
+    ViewData["Title"] = "Đăng Ký";
 }
 
-<div class="d-flex justify-content-center align-items-center vh-100">
-    <div class="col-md-6 col-lg-4">
-        <h2 class="text-center">@ViewData["Title"]</h2>
-
-        <form asp-action="Register" method="post" class="border p-4 shadow rounded bg-light">
-            <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="mb-3">
-                <label asp-for="Password" class="form-label"></label>
-                <input asp-for="Password" class="form-control" type="password" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="mb-3">
-                <label asp-for="ConfirmPassword" class="form-label"></label>
-                <input asp-for="ConfirmPassword" class="form-control" type="password" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
-        </form>
-    </div>
+<div class="form-container">
+    <h2 class="text-center">Đăng Ký</h2>
+    <form method="post" asp-action="Register">
+       
+        <div class="mb-3">
+            <label for="username" class="form-label">Tên Người Dùng</label>
+            <input type="text" id="username" name="UserName" class="form-control" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="Email" class="form-control" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="password" class="form-label">Mật Khẩu</label>
+            <input type="password" id="password" name="Password" class="form-control" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Nhập Lại Mật Khẩu</label>
+            <input type="password" id="confirmPassword" name="ConfirmPassword" class="form-control" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="address" class="form-label">Địa Chỉ</label>
+            <input type="text" id="address" name="Address" class="form-control" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Số Điện Thoại</label>
+            <input type="tel" id="phoneNumber" name="PhoneNumber" class="form-control">
+        </div>
+       
+        <button type="submit" class="btn btn-primary w-100 register-btn">Đăng Ký</button>
+        
+        <div class="text-center mt-3">
+            <a href="/Account/Login" class="login-link">Đã có tài khoản? Đăng nhập</a>
+        </div>
+    </form>
 </div>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}

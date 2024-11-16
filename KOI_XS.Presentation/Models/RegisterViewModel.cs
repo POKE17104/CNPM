@@ -16,5 +16,16 @@ namespace KOI_XS.Presentation.Models
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Mật khẩu xác nhận không khớp.")]
         public string ConfirmPassword { get; set; }
+
+        [Required(ErrorMessage = "Vui lòng nhập họ tên.")]
+        [StringLength(100)]
+        public string Name { get; set; }
+
+        [StringLength(200, ErrorMessage = "Địa chỉ quá dài.")]
+        public string Address { get; set; }
+
+        [StringLength(10, ErrorMessage = "Số điện thoại không hợp lệ.")]
+        [DataType(DataType.PhoneNumber)]
+        public string PhoneNumber { get; set; }
     }
 }
