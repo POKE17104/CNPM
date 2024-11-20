@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\KOI_XS.BLL",
     "\\KOI_XS.Presentation",
     "\\KOI_XS.Presentation\\Views",
@@ -9,5 +10,10 @@
     "\\KOI_XS.Presentation\\wwwroot\\css"
   ],
   "SelectedNode": "\\KOI_XS.Presentation\\Views\\Detail",
+=======
+    "\\KOI_XS.Presentation",
+    "\\KOI_XS.Presentation\\wwwroot"
+  ],
+>>>>>>> 8f8ccda4b10bfe6185567887650baa5bc9b546e7
   "PreviewInSolutionExplorer": false
 }

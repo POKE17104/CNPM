@@ -21,7 +21,6 @@ namespace KOI_XS.Presentation.Controllers
             return View(koiList);
         }
 
-    
         public async Task<IActionResult> Details(int id)
         {
             var koi = await _koiService.GetKoiByIdAsync(id);
