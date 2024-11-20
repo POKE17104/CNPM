@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KOI_XS.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97131fb2b0eca3f025cb5202b89b01074a0d1395")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e044bfdc3b19c4a6863a9d92c2a9e213a5b7d7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("KOI_XS.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KOI_XS.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
