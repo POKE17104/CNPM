@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\KOI_XS.BLL",
-    "\\KOI_XS.Presentation\\wwwroot"
+    "\\KOI_XS.Presentation",
+    "\\KOI_XS.Presentation\\Views",
+    "\\KOI_XS.Presentation\\Views\\Detail",
+    "\\KOI_XS.Presentation\\wwwroot",
+    "\\KOI_XS.Presentation\\wwwroot\\css"
   ],
-  "SelectedNode": "\\KOI_XS.BLL",
+  "SelectedNode": "\\KOI_XS.Presentation\\Views\\Detail",
   "PreviewInSolutionExplorer": false
 }

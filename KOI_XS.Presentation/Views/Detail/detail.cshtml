@@ -1,0 +1,115 @@
+@{
+    ViewData["Title"] = "Chi Tiết Sản Phẩm";
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KOI_XS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Index", "Home")">
+                <img src="~/images/logo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+                KOI_XS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Koi")">Các Loại Cá Koi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Cart")">Giỏ Hàng</a></li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Orders", "Order")">Quản Lý Đơn Hàng</a></li>
+                        <li class="nav-item">
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-link nav-link">Đăng Xuất</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Account")">Đăng Nhập</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Account")">Đăng Ký</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Image -->
+            <div class="col-md-5">
+                <img src="~/images/sample-product.jpg" alt="Thức ăn Aqua Master" class="img-fluid rounded shadow">
+            </div>
+
+            <!-- Product Information -->
+            <div class="col-md-7">
+                <h1 class="product-title">Thức ăn tăng trưởng Aqua Master Growth – Nội địa 10kg</h1>
+                <p><strong>Giá:</strong> 1,250,000 VND</p>
+                <p>
+                    <strong>Mô tả:</strong> Thức ăn chuyên dụng cho cá Koi, giúp tăng trưởng nhanh với thành phần dinh dưỡng cân bằng, hỗ trợ phát triển tối ưu.
+                </p>
+                <form>
+                    <label for="quantity" class="form-label">Số lượng:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" class="form-control w-25 mb-3">
+                    <button type="button" class="btn btn-primary me-2">Mua Ngay</button>
+                    <button type="button" class="btn btn-warning">Thêm vào Giỏ Hàng</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="row mt-5">
+            <div class="col">
+                <h3>Thông tin sản phẩm</h3>
+                <p>Sản phẩm giúp cá phát triển kích thước, tăng sức đề kháng và đảm bảo chất lượng nguồn nước.</p>
+                <h4>Hướng dẫn sử dụng</h4>
+                <p>Cho ăn 2 lần/ngày, tránh lãng phí và dư thừa thức ăn để bảo vệ môi trường ao nuôi.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Thông Tin Liên Hệ</h5>
+                    <p>Địa chỉ: 02 Võ Oanh, Quận Bình Thạnh TP.HCM</p>
+                    <p>Hotline: 033 3317 0xxx</p>
+                    <p>Email: xxxxxx@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Facebook</h5>
+                    <a href="https://facebook.com/dangduyne" class="text-white">Liên Hệ - KoiFish Home</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Bản Đồ</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1165.1513129199868!2d106.71710868388278!3d10.804706063286991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1731129588179!5m2!1svi!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
