@@ -1,22 +1,17 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
-    console.log('JavaScript is ready!');
+﻿document.addEventListener("DOMContentLoaded", function () {
+    // Gắn sự kiện click cho nút mở chat
+    const chatToggleButton = document.querySelector('.chat-toggle-button');
+    const chatWindow = document.querySelector('.chat-window');
 
-  
-    const chatIcon = document.querySelector('.chat-support button');
-    const chatWindow = document.getElementById('chatWindow');
-
-    if (chatIcon && chatWindow) {
-        chatIcon.addEventListener('click', function () {
-            toggleChatWindow();
+    if (chatToggleButton && chatWindow) {
+        chatToggleButton.addEventListener('click', function () {
+            chatWindow.classList.toggle('active'); // Thêm/gỡ lớp 'active' cho chat window
         });
+    } else {
+        console.error("Không tìm thấy nút hoặc cửa sổ chat. Kiểm tra lớp CSS hoặc HTML.");
     }
 
-
-    const sendButton = document.querySelector('.chat-footer button');
-    if (sendButton) {
-        sendButton.addEventListener('click', sendMessage);
-    }
-
+    // Gõ chữ tự động
     const textArray = [
         "Dịch vụ vận chuyển cá Koi nhanh chóng.",
         "Đảm bảo chất lượng hàng đầu.",
@@ -55,15 +50,6 @@
 
     typeText();
 });
-
-
-function toggleChatWindow() {
-    const chatWindow = document.getElementById('chatWindow');
-    if (chatWindow) {
-        chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
-    }
-}
-
 
 function sendMessage() {
     const chatInput = document.getElementById('chatInput');

@@ -9,85 +9,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KOI_XS.Presentation
 build_property.RootNamespace = KOI_XS.Presentation
-build_property.ProjectDir = D:\CNPM\KOI_XS.Presentation\
+build_property.ProjectDir = C:\Users\hahuy\CNPM\KOI_XS.Presentation\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\CNPM\KOI_XS.Presentation
+build_property.MSBuildProjectDirectory = C:\Users\hahuy\CNPM\KOI_XS.Presentation
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Account/Login.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Account/Profile.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Account/Register.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Cart/Index.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Detail/detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXGRldGFpbC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/CNPM/KOI_XS.Presentation/Views/Home/Index.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Home/Privacy.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Home/Services.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Home/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Koi/Create.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Koi/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29pXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Koi/Delete.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Koi/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29pXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Koi/Details.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Koi/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29pXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Koi/Edit.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Koi/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29pXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Koi/Index.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Koi/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29pXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Shared/Error.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/_ViewImports.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/_ViewStart.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/CNPM/KOI_XS.Presentation/Views/Shared/_Layout.cshtml]
+[C:/Users/hahuy/CNPM/KOI_XS.Presentation/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5ov4wt46h2

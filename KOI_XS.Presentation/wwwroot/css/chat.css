@@ -1,42 +1,47 @@
-
 .chat-window {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
     position: fixed;
     bottom: 90px;
     right: 20px;
-    width: 300px;
+    width: 400px;
+    height: 500px;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    display: none;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
+
+.chat-window.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 
 .chat-header {
     background-color: #1b6ec2;
     color: white;
-    padding: 10px;
+    padding: 15px;
+    font-size: 18px;
     border-radius: 8px 8px 0 0;
 }
 
+
 .chat-body {
-    max-height: 200px;
+    flex: 1; 
     overflow-y: auto;
-    padding: 10px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
 }
 
-.chat-footer {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-}
 
-.chat-message {
-    background-color: #f1f1f1;
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
 
 .chat-support button {
     width: 60px;
@@ -47,4 +52,50 @@
     right: 20px;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1b6ec2;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: wiggle 0.3s ease infinite;
+}
+
+
+.chat-footer {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.chat-footer input[type="text"] {
+    flex: 1; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px; 
+}
+
+.chat-footer button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #1b6ec2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
 }

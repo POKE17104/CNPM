@@ -24,7 +24,6 @@
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Index", "Home")">
                 <img src="~/images/logo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
-                KOI_XS
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
                 <span class="navbar-toggler-icon"></span>
@@ -35,19 +34,26 @@
                     <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Koi")">Các Loại Cá Koi</a></li>
                     <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Cart")">Giỏ Hàng</a></li>
                     @if (User.Identity.IsAuthenticated)
-                    {
-                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Orders", "Order")">Quản Lý Đơn Hàng</a></li>
-                        <li class="nav-item">
-                            <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
-                                <button type="submit" class="btn btn-link nav-link">Đăng Xuất</button>
-                            </form>
-                        </li>
-                    }
-                    else
-                    {
-                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Account")">Đăng Nhập</a></li>
-                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Account")">Đăng Ký</a></li>
-                    }
+{
+    if (User.IsInRole("Admin"))
+    {
+        <li class="nav-item"><a class="nav-link" href="@Url.Action("Report", "Admin")">Công Cụ Báo Cáo</a></li>
+        <li class="nav-item"><a class="nav-link" href="@Url.Action("AddKoi", "Admin")">Thêm Cá</a></li>
+        <li class="nav-item"><a class="nav-link" href="@Url.Action("ManageUsers", "Admin")">Thông Tin Người Dùng</a></li>
+        <li class="nav-item"><a class="nav-link" href="@Url.Action("ManageOrders", "Admin")">Quản Lý Đơn Hàng</a></li>
+    }
+    <li class="nav-item"><a class="nav-link" href="@Url.Action("Orders", "Order")">Quản Lý Đơn Hàng</a></li>
+    <li class="nav-item">
+        <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+            <button type="submit" class="btn btn-link nav-link">Đăng Xuất</button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Account")">Đăng Nhập</a></li>
+    <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Account")">Đăng Ký</a></li>
+}
                 </ul>
             </div>
         </div>
@@ -78,6 +84,53 @@
                         <img src="~/images/nb3.jpg" class="img-fluid rounded shadow" alt="Koi 3" style="height: 200px; object-fit: cover;">
                     </div>
                 </div>
+              <div class="blog-content">
+                   <h3>Giới Thiệu</h3>
+     <p>Cá Koi, với những màu sắc rực rỡ và vẻ đẹp thanh thoát, không chỉ là loài cá cảnh nổi tiếng mà còn mang trong mình những giá trị văn hóa sâu sắc, đặc biệt là trong phong thủy. Trong văn hóa Nhật Bản, cá Koi được xem như biểu tượng của sự may mắn, thành công, thịnh vượng và sự kiên trì. Câu chuyện về một chú cá Koi vượt thác, leo lên thác nước và biến thành một con rồng là một truyền thuyết nổi tiếng, mang thông điệp về sự kiên nhẫn và vượt qua thử thách. Chính vì vậy, việc nuôi cá Koi không chỉ là một thú vui mà còn là cách tạo dựng một không gian thư giãn và ý nghĩa, giúp gia chủ thăng hoa trong công việc và cuộc sống.</p>
+     <p>Cá Koi không chỉ thu hút người chơi cá cảnh vì vẻ đẹp tuyệt vời mà còn vì tính cách dễ nuôi, hiền hòa và sống lâu. Chúng có thể sống tới vài chục năm, thậm chí hơn 100 năm trong môi trường thích hợp. Vì vậy, cá Koi trở thành loài cá cảnh lý tưởng cho các hồ cá trong sân vườn, khuôn viên lớn của công viên, resort hay thậm chí là những ngôi nhà phố. Ngoài ra, cá Koi còn có khả năng thích nghi tốt với các điều kiện sống khác nhau, chính vì thế, chúng đã trở thành một phần không thể thiếu trong những khu vườn Nhật Bản, hay các không gian sống hiện đại trên toàn thế giới.</p>
+
+     <h4>Các Loại Cá Koi Và Cách Nuôi Dưỡng Cơ Bản</h4>
+     <p>Hiện nay, trên thị trường có rất nhiều giống cá Koi khác nhau, mỗi giống có đặc điểm về màu sắc, vây, hình dáng và kích thước riêng biệt. Dưới đây là một số giống cá Koi phổ biến mà bạn có thể tham khảo khi nuôi dưỡng:</p>
+
+     <ul>
+        <li><strong>Cá Koi Kohaku:</strong> Đây là giống cá Koi phổ biến nhất, có màu trắng với các vết đỏ ở trên lưng hoặc bụng. Kohaku thể hiện sự tinh khiết và thuần khiết trong phong thủy.</li>
+        <li><strong>Cá Koi Sanke:</strong> Loài cá này có sự kết hợp của ba màu sắc: trắng, đỏ và đen, tạo nên vẻ đẹp cân đối và hài hòa. Đây là loài cá rất được yêu thích trong các cuộc thi cá Koi.</li>
+        <li><strong>Cá Koi Showa:</strong> Tương tự như Sanke, nhưng với nền đen và các đốm màu đỏ và trắng. Showa thể hiện sự mạnh mẽ và kiên cường.</li>
+        <li><strong>Cá Koi Utsuri:</strong> Loại cá Koi này có nền đen với các vệt màu đỏ, trắng hoặc vàng. Utsuri rất được ưa chuộng trong các hồ cá có thiết kế tinh tế và hiện đại.</li>
+        <li><strong>Cá Koi Shiro Utsuri:</strong> Đây là loại cá có màu nền đen và các vệt màu trắng. Shiro Utsuri mang đến sự sang trọng và đẳng cấp cho không gian nuôi cá.</li>
+     </ul>
+
+     <p>Để nuôi dưỡng cá Koi khỏe mạnh, bạn cần đảm bảo các yếu tố sau:</p>
+
+     <h5>1. Chọn Hồ Cá Phù Hợp</h5>
+     <p>Cá Koi cần một không gian rộng lớn để phát triển. Hồ cá cần phải có diện tích tối thiểu từ 1000 lít nước cho mỗi con cá trưởng thành. Nếu hồ quá nhỏ, cá sẽ cảm thấy chật chội và dễ bị stress, điều này có thể dẫn đến các bệnh tật. Hệ thống lọc nước là yếu tố cực kỳ quan trọng để duy trì chất lượng nước, vì cá Koi sống trong môi trường nước sạch và ổn định. Bạn có thể đầu tư hệ thống lọc nước đa tầng, kết hợp với máy bơm oxy để đảm bảo nguồn nước luôn sạch và đầy đủ dưỡng khí.</p>
+
+     <h5>2. Cung Cấp Thức Ăn Chất Lượng</h5>
+     <p>Cá Koi là loài ăn tạp và chúng cần một chế độ ăn uống đầy đủ chất dinh dưỡng để phát triển khỏe mạnh và có màu sắc tươi sáng. Thức ăn cho cá Koi nên được chọn lựa kỹ lưỡng, chủ yếu là thức ăn viên hoặc thức ăn tươi như côn trùng, giun, tảo. Thức ăn viên chuyên dụng giúp bổ sung đầy đủ vitamin, khoáng chất và các chất dinh dưỡng cần thiết. Để duy trì màu sắc rực rỡ, bạn cần chọn thức ăn có thêm các chất kích thích màu sắc như carotenoid.</p>
+
+     <h5>3. Theo Dõi Nhiệt Độ Nước</h5>
+     <p>Cá Koi thích hợp với nhiệt độ nước từ 18°C đến 25°C. Nhiệt độ quá cao hoặc quá thấp sẽ ảnh hưởng đến sự phát triển và sức khỏe của cá. Vào mùa đông, bạn có thể sử dụng máy sưởi hồ để duy trì nhiệt độ ổn định, trong khi vào mùa hè, hệ thống làm mát hoặc tạo bóng râm cho hồ cá sẽ giúp giữ nhiệt độ trong phạm vi lý tưởng. Hãy đảm bảo rằng nhiệt độ nước không thay đổi quá nhanh vì sự thay đổi đột ngột có thể khiến cá bị sốc nhiệt.</p>
+
+     <h5>4. Chăm Sóc Và Giám Sát Sức Khỏe Cá</h5>
+     <p>Cá Koi rất dễ bị bệnh nếu môi trường sống không được duy trì đúng cách. Bạn cần kiểm tra sức khỏe của cá thường xuyên, đặc biệt là các dấu hiệu như cá bỏ ăn, bơi lờ đờ, có vết thương trên cơ thể hay vây. Cũng nên thay nước định kỳ và làm sạch hệ thống lọc để ngăn ngừa sự phát triển của vi khuẩn có hại. Hãy đảm bảo rằng các chỉ số nước như pH, amoniac, nitrat, và nitrit luôn ở mức an toàn để cá có thể phát triển khỏe mạnh.</p>
+
+     <h4>Vận Chuyển Cá Koi - An Toàn Và Chuyên Nghiệp</h4>
+     <p>Vận chuyển cá Koi là một công việc đòi hỏi sự cẩn trọng và chuyên nghiệp. Mỗi chuyến vận chuyển cá Koi phải đảm bảo rằng chúng sẽ không bị tổn thương trong suốt hành trình dài. Dưới đây là các bước trong quy trình vận chuyển cá Koi của chúng tôi:</p>
+
+     <h5>1. Đóng Gói Chuyên Nghiệp</h5>
+     <p>Cá Koi sẽ được đóng gói trong các túi ni-lon dày, chứa đầy nước sạch và oxy. Mỗi túi sẽ được niêm phong kín để đảm bảo không có nước tràn ra ngoài trong suốt quá trình vận chuyển. Các túi cá sẽ được đặt trong các thùng carton chịu lực, giúp bảo vệ cá khỏi các va đập. Chúng tôi sử dụng vật liệu xốp và bông mềm để đệm xung quanh các túi, giúp giảm thiểu tác động từ bên ngoài.</p>
+
+     <h5>2. Vận Chuyển An Toàn</h5>
+     <p>Chúng tôi lựa chọn các đơn vị vận chuyển uy tín với đội ngũ chuyên nghiệp và kinh nghiệm trong việc vận chuyển cá Koi. Các phương tiện vận chuyển của chúng tôi được trang bị hệ thống điều hòa nhiệt độ để giữ môi trường ổn định trong suốt hành trình. Đặc biệt, chúng tôi luôn theo dõi các điều kiện vận chuyển để đảm bảo rằng cá không bị căng thẳng, stress hay nhiệt độ thay đổi quá nhanh.</p>
+
+     <h5>3. Giám Sát Quá Trình Vận Chuyển</h5>
+     <p>Trong suốt quá trình vận chuyển, chúng tôi sử dụng hệ thống cảm biến nhiệt độ và ẩm độ để theo dõi tình trạng của cá. Mỗi lô hàng đều có thông tin theo dõi trực tuyến, giúp khách hàng có thể kiểm tra tiến độ giao hàng và đảm bảo rằng cá của mình được chăm sóc chu đáo. Để tăng cường sự an tâm, chúng tôi cung cấp bảo hiểm cho mọi chuyến vận chuyển.</p>
+
+     <h4>Dịch Vụ Chăm Sóc Khách Hàng Tận Tâm</h4>
+     <p>Chúng tôi cam kết mang đến cho khách hàng trải nghiệm dịch vụ hoàn hảo. Đội ngũ chăm sóc khách hàng của chúng tôi luôn sẵn sàng hỗ trợ bạn qua điện thoại, email hoặc chat trực tuyến bất cứ lúc nào. Dù bạn gặp vấn đề trong việc chọn lựa giống cá, hay có câu hỏi về cách nuôi dưỡng và chăm sóc cá Koi, chúng tôi đều có đội ngũ chuyên gia sẵn sàng tư vấn chi tiết và giải đáp mọi thắc mắc.</p>
+
+     <p><strong>Liên Hệ Ngay Hôm Nay:</strong> Để sở hữu những chú cá Koi tuyệt đẹp và nhận được sự hỗ trợ tận tình từ chúng tôi, hãy liên hệ ngay hôm nay. Chúng tôi luôn sẵn sàng giúp bạn tạo dựng một không gian nuôi cá hoàn hảo và mang lại may mắn, thịnh vượng cho gia đình bạn.</p>
+                </div>
             </div>
         }
     </div>
@@ -87,13 +140,9 @@
         <div class="footer__section footer__contact">
         <h5>THÔNG TIN LIÊN HỆ</h5>
         <p>Địa chỉ: 02 Võ Oanh, Quận Bình Thạnh TP.HCM</p>
-        <p>Điện thoại: 03333170xxx</p>
-        <p>Hotline: 033 3317 0xxx</p>
-        <p>Email: xxxxxx@gmail.com</p>
-    </div>
-    <div class="footer__section footer__facebook">
-        <h5>FACEBOOK</h5>
-        <a href="https://facebook.com/dangduyne">Liên Hệ - KoiFish Home</a>
+        <p>Hotline: 033 3317 0435</p>
+        <p>Email: koi_xs@gmail.com</p>
+
         </div>
             <div class="footer__section footer__map">
              <div class="map-title">BẢN ĐỒ</div>
@@ -101,17 +150,46 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1165.1513129199868!2d106.71710868388278!3d10.804706063286991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1731129588179!5m2!1svi!2s" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              </div>
             </div>
-        </footer>
+          
+     
+
+<!-- Chat Support Button -->
+<div class="chat-support">
+    <button class="chat-toggle-button">
+        <i class="fa fa-comments"></i>
+    </button>
+</div>
+
+<!-- Chat Window -->
+<div class="chat-window">
+    <div class="chat-header">Hộp Thoại</div>
+    <div class="chat-body">
+        <p>Tin nhắn trước đó...</p>
+    </div>
+    <div class="chat-footer">
+        <input type="text" placeholder="Nhập tin nhắn...">
+        <button>Gửi</button>
+    </div>
+</div>
+        <button class="btn btn-primary">
+            <i class="fa fa-paper-plane"></i>
+        </button>
+    </div>
+</div>
 
 
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Tùy chỉnh cho cửa sổ chat
-        function toggleChatWindow() {
-            const chatWindow = document.getElementById('chatWindow');
-            chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
-        }
-    </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('.chat-toggle-button').addEventListener('click', function() {
+        const chatWindow = document.querySelector('.chat-window');
+        chatWindow.classList.toggle('active');
+    });
+});
+</script>
+
+
+
+
     @RenderSection("Scripts", required: false)
 </body>
 

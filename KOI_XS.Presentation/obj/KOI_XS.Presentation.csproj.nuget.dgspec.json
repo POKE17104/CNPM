@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CNPM\\KOI_XS.Presentation\\KOI_XS.Presentation.csproj": {}
+    "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\KOI_XS.Presentation.csproj": {}
   },
   "projects": {
-    "D:\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj": {
+    "C:\\Users\\hahuy\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\hahuy\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj",
         "projectName": "KOI_XS.BLL",
-        "projectPath": "D:\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj",
-        "packagesPath": "C:\\Users\\DANG ANH DUY\\.nuget\\packages\\",
-        "outputPath": "D:\\CNPM\\KOI_XS.BLL\\obj\\",
+        "projectPath": "C:\\Users\\hahuy\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj",
+        "packagesPath": "C:\\Users\\hahuy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hahuy\\CNPM\\KOI_XS.BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DANG ANH DUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\hahuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj": {
-                "projectPath": "D:\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj"
+              "C:\\Users\\hahuy\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj": {
+                "projectPath": "C:\\Users\\hahuy\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj"
               }
             }
           }
@@ -46,9 +43,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -75,25 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj": {
+    "C:\\Users\\hahuy\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\hahuy\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj",
         "projectName": "KOI_XS.DAL",
-        "projectPath": "D:\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj",
-        "packagesPath": "C:\\Users\\DANG ANH DUY\\.nuget\\packages\\",
-        "outputPath": "D:\\CNPM\\KOI_XS.DAL\\obj\\",
+        "projectPath": "C:\\Users\\hahuy\\CNPM\\KOI_XS.DAL\\KOI_XS.DAL.csproj",
+        "packagesPath": "C:\\Users\\hahuy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hahuy\\CNPM\\KOI_XS.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DANG ANH DUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\hahuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,6 +93,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -117,9 +110,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -156,25 +148,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CNPM\\KOI_XS.Presentation\\KOI_XS.Presentation.csproj": {
+    "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\KOI_XS.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CNPM\\KOI_XS.Presentation\\KOI_XS.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\KOI_XS.Presentation.csproj",
         "projectName": "KOI_XS.Presentation",
-        "projectPath": "D:\\CNPM\\KOI_XS.Presentation\\KOI_XS.Presentation.csproj",
-        "packagesPath": "C:\\Users\\DANG ANH DUY\\.nuget\\packages\\",
-        "outputPath": "D:\\CNPM\\KOI_XS.Presentation\\obj\\",
+        "projectPath": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\KOI_XS.Presentation.csproj",
+        "packagesPath": "C:\\Users\\hahuy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hahuy\\CNPM\\KOI_XS.Presentation\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DANG ANH DUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\hahuy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,14 +170,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj": {
-                "projectPath": "D:\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj"
+              "C:\\Users\\hahuy\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj": {
+                "projectPath": "C:\\Users\\hahuy\\CNPM\\KOI_XS.BLL\\KOI_XS.BLL.csproj"
               }
             }
           }
@@ -202,9 +191,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -258,7 +246,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
